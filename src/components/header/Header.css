@@ -1,0 +1,32 @@
+.header__container {
+    position: relative;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    min-height: 449px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../../assets/header/image.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__logo {
+  margin-left: 80px;
+}
+
+.header__menu-list {
+  background-color: black;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.header__title {
+  font-size: 60px;
+  color: white;
+  padding-left: 80px;
+}

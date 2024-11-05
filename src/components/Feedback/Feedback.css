@@ -1,0 +1,21 @@
+.feedback {
+    padding-bottom: 80px;
+    
+}
+
+.feedback-content {
+    display: flex;
+}
+
+.feedback-item {
+    display: flex;
+    width: 40%;
+}
+
+.feedback-item:first-child {
+    margin-right: 50px;
+}
+
+.feedback-img {
+    margin-left: 40%;
+}

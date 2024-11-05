@@ -1,0 +1,28 @@
+.info {
+    background-image: url('../../assets/main/MoreInfoBanner.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+
+.main__block-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    height: 50px;
+}
+
+.main__block-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-content {
+    text-align: center;
+}
