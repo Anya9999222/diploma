@@ -1,0 +1,49 @@
+.aside__form-container {
+    background-color: #3E3C41;
+    color: white;
+    box-sizing: border-box;
+    /* width: 360px; */
+}
+
+.date__container{
+    display: flex;
+    padding: 26px 43px 36px 34px;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.date__input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 295px;
+    box-sizing: border-box;
+    padding: 8px 20px 10px 2px;
+}
+
+.date__container-input{
+    border: none;
+    height: 43px;
+}
+
+
+.calendar-icon {
+    width: 30px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/src/assets/asideForm/calendar.png');
+
+}
+
+.options-container{
+    border-top: 1px solid #E5E5E5;
+    padding: 24px 43px 26px 68px;
+}
+
+.aside__form-directions {
+    border-top: 1px solid #E5E5E5;
+    padding: 30px;
+}

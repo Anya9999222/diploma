@@ -1,8 +1,42 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../src/fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../src/fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../src/fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../src/fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../src/fonts/Roboto-ThinItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -12,6 +46,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 a {
   font-weight: 500;
@@ -24,10 +60,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 100vw;
-  min-height: 100vh;
 }
 
 h1 {
@@ -42,7 +74,7 @@ h2 {
 button {
   background-color: transparent;
   border: 1px solid white;
-  color: white;
+  /* color: white; */
   height: 45px;
   border-radius: 8px;
   width: 200px;
@@ -58,11 +90,7 @@ button:focus-visible {
 
 input {
   height: 40px;
-  width: 250px;
-}
-
-label {
-  width: 80%;
+  outline: none;
 }
 
 li {
@@ -80,6 +108,12 @@ li {
 }
 
 .main__block{
-  padding-left: 80px;
-  height: 350px;
+  /* padding-left: 80px; */
+  height: 575px;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px;
 }

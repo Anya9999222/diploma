@@ -1,0 +1,55 @@
+.route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 47px; */
+    width: 100%;
+    /* padding: 25px; */
+}
+
+.route-time {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.direct__arrow{
+    background-size: cover;
+    width: 30px;
+    height: 20px;
+}
+
+.direct__arrow.to {
+    background-image: url('/src/assets/ticket/arrow-to.png');
+}
+
+.direct__arrow.forward {
+    background-image: url('/src/assets/ticket/arrow-return.png');
+}
+
+.city {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.station {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #928F94;
+
+}

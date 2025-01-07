@@ -1,0 +1,41 @@
+.ticket-option {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+    color: #3E3C41;
+    margin-bottom: 33px;
+}
+
+.ticket-option-item {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.quantity {
+   font-weight: 500; 
+   color: #FFA800;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.price-start {
+    color: #928F94;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.ruble-icon{
+    background-image: url(/src/assets/asideForm/ruble.png);
+    width: 16px;
+    height: 19px;
+    background-size: cover;
+}

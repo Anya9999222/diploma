@@ -9,18 +9,41 @@
 .main__block-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .info-button {
     background-color: transparent;
     border: 1px solid white;
     color: white;
-    height: 50px;
+    height: 60px;
+    width: 325px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.info-button:hover {
+    background-color: #FFCA62;
+    border: none;
+    color: #2D2B2F;
+}
+
+.info-button:focus {
+    outline: none;
+    background-color: white;
+    color: #2D2B2F;
 }
 
 .main__block-content {
     display: flex;
     justify-content: space-around;
+    margin-top: 80px;
 }
 
 .item-content {

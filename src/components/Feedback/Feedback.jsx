@@ -2,14 +2,15 @@ import './Feedback.css'
 
 export const Feedback = () => {
     return(
-        <div className="main__block feedback">
+        <div className="main__block feedback" id='feedback'>
+            <div className='wrapper'>
             <h2>Отзывы</h2>
             <div className="feedback-content">
             <div className="feedback-item">
                 <img src="../../src/assets/feedback1.png" alt="" />
                 <div className="feedback-info">
                     <h3>Екатерина Вальнова</h3>
-                    <div>
+                    <div className='feedback__text'>
                         Доброжелательные подсказки
                         на всех этапах помогут правильно заполнить поля и без 
                         затруднений купить авиа или ж/д билет, даже если вы заказываете 
@@ -21,7 +22,7 @@ export const Feedback = () => {
                 <img src="../../src/assets/feedback2.png" alt="" />
                 <div className="feedback-info">
                     <h3>Евгений Стрыкало</h3>
-                    <div>
+                    <div className='feedback__text'>
                         СМС-сопровождение до посадки
                         Сразу после оплаты ж/д билетов 
                         и за 3 часа до отправления мы пришлем вам СМС-напоминание о поездке.
@@ -31,6 +32,7 @@ export const Feedback = () => {
             </div>
             
                 <img src="../../src/assets/dots.png" className="feedback-img"alt="" />
+            </div>
         </div>
     )
 }

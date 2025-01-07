@@ -1,0 +1,43 @@
+.options-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.options__span{
+    width: 102px;
+    margin-right: 33px;
+    font-size: 18px;
+}
+.options-icon {
+    margin-right: 34px;
+    width: 17px;
+}
+
+.btn__toggle-container {
+    position: relative;
+
+    background-color: white;
+    width: 72px;
+    height: 19px;
+    border-radius: 10px;
+}
+
+.btn__toggle {
+    position: absolute;
+    background-color: #C4C4C4;
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50px;
+
+    top: -5px;
+}
+
+.btn__toggle-container.active {
+    background-color: #FCDC9D;
+}
+.btn__toggle.active {
+    background-color: #FFA800;
+    right: 0px;
+}

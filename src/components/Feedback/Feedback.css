@@ -5,6 +5,7 @@
 
 .feedback-content {
     display: flex;
+    justify-content: space-between;
 }
 
 .feedback-item {
@@ -16,6 +17,23 @@
     margin-right: 50px;
 }
 
+.feedback-info {
+    margin-left: 50px;
+}
+
+.feedback__text {
+    font-size: 18px;
+    color: #928F94;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 21.09px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
 .feedback-img {
-    margin-left: 40%;
+    margin-left: 45%;
+    margin-top: 150px;
 }

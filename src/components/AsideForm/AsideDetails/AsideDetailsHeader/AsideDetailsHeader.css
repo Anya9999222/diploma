@@ -1,0 +1,48 @@
+.aside__block-header {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header-info{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-info.from{
+    width: 80%;
+}
+
+.header-info-icon {
+    width: 32px;
+    height: 26px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.header-info-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.header-info-icon.from {
+    background-image: url(/src/assets/choosingPlaces/arrowTo.png);
+}
+
+.header-info-icon.to {
+    background-image: url(/src/assets/choosingPlaces/arrowForward.png);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.icon.open {
+    background-image: url('/src/assets/asideForm/plus-icon.png');
+}

@@ -2,12 +2,12 @@ import './Footer.css'
 
 export const Footer = () => {
     return(
-        <div className="footer__container">
-            <div className="footer__contact">
+        <footer className="footer">
+            <div className="footer__contact" id='contact'>
                 <h2 className='foooter-header'>Свяжитесь с нами</h2>
                 <div className="footer__contact-item">
                     <img src="../../src/assets/footer/phone.png" className='footer-img' alt="" />
-                    <a href="#">8(800)000 00 00</a>
+                    <a href="#">8 (800) 000 00 00</a>
                 </div>
                 <div className="footer__contact-item">
                     <img src="../../src/assets/footer/mail.png" className='footer-img' alt="" />
@@ -26,8 +26,12 @@ export const Footer = () => {
                 <div className="footer_subscribe-item">
                     <h2 className='foooter-header'>Подписка</h2>
                     <form action="" className='footer-form'>
-                        <label htmlFor="email">Будьте в курсе событий</label>
-                        <input type="email" name='email'/>
+                        <div className='footer-form-block'>
+                            <label htmlFor="email">Будьте в курсе событий</label>
+
+                            <input className='footer-form__input' type="email" name='email'/>
+                        </div>
+                        
                         <button className='button footer'>Отправить</button>
                     </form>
                 </div>
@@ -48,7 +52,7 @@ export const Footer = () => {
                 <img src="../../src/assets/footer/arrow.png" className="footer-item-img" alt="" />
                 <span className="footer__web">2018 web</span>
             </div>
-        </div>
+        </footer>
     )
 }
 

@@ -1,0 +1,33 @@
+
+
+.aside__block {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    border-top: 1px solid #E5E5E5;
+}
+
+
+
+.aside__block-main {
+    margin-top: 47px;
+    margin-bottom: 47px;
+}
+.item__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hide {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-image: url(/src/assets/choosingPlaces/minus.png);
+}

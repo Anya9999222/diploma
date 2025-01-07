@@ -1,0 +1,49 @@
+.aside__details {
+    background-color: #3E3C41;
+    color: white;
+}
+
+.details__header {
+    color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.aside__details-total {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    border-top: 1px solid #E5E5E5;
+
+}
+
+.aside__details-total-item {
+    display: flex;
+    align-items: center;
+}
+
+.aside__details-total-price {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56.25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFA800;
+    margin-right: 5px;
+}
+
+.ruble-icon.aside-det{
+    width: 26px;
+    height: 32px;
+}

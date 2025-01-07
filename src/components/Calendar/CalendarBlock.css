@@ -1,0 +1,32 @@
+.calendar__container {
+ 
+  position: relative;
+  /* width: 352px;
+  height: 302px; */
+  /* top: 643px;
+  left: 968px;
+  gap: 0px;
+  opacity: 0px; */
+
+}
+
+.calendar {
+  position: absolute;
+  margin-top: 10px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 5px;
+  color: black;
+}
+
+.react-calendar__tile{
+  color: black;
+}
+.react-calendar__viewContainer {
+  border-top: 1px solid black;
+}
+.react-calendar__month-view__weekdays__weekday {
+  display: none;
+}
+.react-calendar__navigation {
+  color: black;
+}

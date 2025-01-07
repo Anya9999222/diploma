@@ -1,0 +1,29 @@
+.aside__passengers {
+    border-top: 1px solid #E5E5E5;
+    padding: 20px;
+    
+}
+
+.aside__paddengers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside__passengers-info {
+    display: flex;
+    align-items: center;
+}
+
+.passenger__icon {
+    width: 26px;
+    height: 26px;
+    background-image: url(/src/assets/passenger/passenger-icon.png);
+    background-size: cover;
+}
+
+.aside-passenger__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 20px;
+}

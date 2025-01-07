@@ -1,0 +1,14 @@
+.modal__info {
+    position: absolute;
+    width: 667px;
+    height: 418px;
+    background-color: white;
+}
+
+.modal__info-heaader {
+    background-color: #FFF5005C;
+    height: 107px;
+    padding: 40px;
+    box-sizing: border-box;
+
+}

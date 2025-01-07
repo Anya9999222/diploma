@@ -1,0 +1,19 @@
+.last__tickets {
+    margin-top: 100px;
+}
+
+.last__tickets-title {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35.16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+
+}
+
+.last__tickets-list {
+    margin-top: 40px;
+}

@@ -1,20 +1,48 @@
-.header__container {
+.header {
     position: relative;
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    min-height: 449px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url('../../assets/header/image.png');
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 980px;
+    background-image: url('../../assets/header/image.png');
+}
+
+
+.header.trains {
+  height: 620px;
+  background-image: url('/src/assets/header/header-banner-next.png');
+}
+
+.header.pay {
+  height: 620px;
+  background-image: url('/src/assets/header/header-banner-next.png');
+}
+
+.header.places {
+  height: 620px;
+  background-image: url('/src/assets/header/header-banner-next.png');
+}
+
+
+.header.passengers {
+  height: 620px;
+  background-image: url('/src/assets/header/header-banner-next.png');
+}
+
+.header.success {
+  height: 834px;
+  background-image: url('/src/assets/header/success-banner.png');
 }
 
 .header__logo {
-  margin-left: 80px;
+  margin-left: 250px;
+  font-weight: 600;
 }
 
 .header__menu-list {
@@ -22,11 +50,27 @@
   display: flex;
   height: 50px;
   align-items: center;
-  padding-left: 80px;
+  padding-left: 250px;
+  margin-top: 0;
+}
+
+.header__main{
+  display: flex;
+  justify-content: space-around;
 }
 
 .header__title {
   font-size: 60px;
   color: white;
-  padding-left: 80px;
+  width: 506px;
+  margin-bottom: 256px;
+}
+
+.header__title-item {
+ 
+  font-weight: 100;
+}
+
+.header__title-span {
+  font-weight: 800;
 }

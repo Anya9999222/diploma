@@ -1,0 +1,190 @@
+.popup__wrapper{
+    height: 1000px;
+}
+
+.popup__success {
+    position: absolute;
+    z-index: 999;
+    width: 1404px;
+    height: 1113px;
+    background-color: white;
+    left: 13%;
+    top: 50%;
+    border: 1px solid #C4C4C4;
+    box-shadow: 0px 2px 2px 0px #00000040;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popup__header {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between ;
+font-size: 36px;
+font-weight: 700;
+line-height: 42.19px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.order__price {
+    display: flex;
+    align-items: baseline;
+    width: 240px;
+    justify-content: space-between;
+font-size: 36px;
+font-weight: 400;
+line-height: 42.19px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #928F94 ;
+}
+
+.price__sum {
+    font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: 42.19px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #3E3C41;
+}
+
+.popup__info {
+    height: 312px;
+    background-color: #F4F3F6;
+    padding: 40px 320px;
+    box-sizing: border-box;
+}
+
+.popup__info-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 205px;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.09px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.text-bold{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.09px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.content-img {
+    width: 155px;
+    height: 155px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.content-img.email {
+    background-image: url('/src/assets/popup/email.png');
+}
+.content-img.ticket {
+    background-image: url('/src/assets/popup/tickets.png');
+}
+.content-img.boarding {
+    background-image: url('/src/assets/popup/boarding.png');
+}
+
+.popup__main {
+    padding: 100px 205px;
+}
+
+.popup__main-title {
+    font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: 42.19px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.popup__main-text {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 400;
+line-height: 28.13px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.popup__main-greetings {
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 28.13px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.popup__footer {
+    height: 161px;
+    background-color: #FFA800E0;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 78px;
+    box-sizing: border-box;
+}   
+
+.footer-feedback-item {
+    display: flex;
+    align-items: center;
+}
+
+.item-text {
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 400;
+line-height: 28.13px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.footer-btn{
+    border: 1px solid #3E3C41;
+    width: 323px;
+    height: 60px;
+    border-radius: 5px;
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 28.13px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+text-transform: uppercase;
+color: #292929;
+}

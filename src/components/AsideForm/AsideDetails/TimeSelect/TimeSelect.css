@@ -1,0 +1,108 @@
+.price__wrapper {
+    padding: 37px 32px 60px;
+    border-top: 1px solid #E5E5E5;
+   }
+   
+   .range__title {
+     font-family: Roboto;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: 35.16px;
+     text-align: left;
+     text-underline-position: from-font;
+     text-decoration-skip-ink: none;
+   
+   }
+   
+   .range__item {
+     font-family: Roboto;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 21.09px;
+     text-align: left;
+     text-underline-position: from-font;
+     text-decoration-skip-ink: none;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 5px;
+   
+   }
+   
+   
+   .time-slider {
+     height: 10px;
+     position: relative;
+     background-color: transparent;
+     border-radius: 8px;
+     border: 1px solid #C4C4C4 ;
+   }
+   
+   .range-selected {
+     height: 100%;
+     left: 30%; 
+     right: 30%; 
+     position: absolute;
+     border-radius: 5px;
+     background-color:#FFA800;
+   }
+   
+   
+   .time-input {
+     position: relative;
+   }
+   
+   .time-input input {
+     position: absolute;
+     width: 100%;
+     height: 5px;
+     top: -10px;
+     left: -2px;
+     background: none;
+     pointer-events: none;
+     -webkit-appearance: none;
+   }
+   
+   .time-input input::-webkit-slider-thumb {
+     height: 18px;
+     width: 18px;
+     border-radius: 50%;
+     border: 3px solid white;
+     background-color: #fff;
+     pointer-events: auto;
+     -webkit-appearance: none;
+   }
+   
+   .prices__range {
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     
+     margin-top: 5px;
+   
+   }
+   .price__max {
+     position: absolute;
+     font-family: Roboto;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 18.75px;
+     text-align: right;
+     text-underline-position: from-font;
+     text-decoration-skip-ink: none;
+     color: #E5E5E5;
+   }
+   
+   .price__start {
+     position: absolute;
+     font-family: Roboto;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 18.75px;
+     text-align: right;
+     text-underline-position: from-font;
+     text-decoration-skip-ink: none;
+     color: #E5E5E5;
+   }
+   /* .actual {
+     position: absolute;
+   } */
