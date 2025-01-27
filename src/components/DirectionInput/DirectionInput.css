@@ -1,0 +1,40 @@
+.input__container-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    /* align-items: center; */
+    /* margin-bottom: 80px; */
+}
+
+.header__label {
+    margin-left: 15px;
+}
+
+.direction-icon {
+    width: 20.87px;
+    height: 30px;
+    bottom: 15px;
+    right: 15px;
+    gap: 0px;
+    opacity: 0px;
+    background-image: url(/src/assets/header/input-direction.png);
+    position: absolute;
+    
+}
+
+.form__input {
+    width: 320px;
+    height: 60px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: black;
+    /* margin: 5px 10px; */
+}

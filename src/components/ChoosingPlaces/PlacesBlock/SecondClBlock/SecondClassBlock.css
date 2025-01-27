@@ -1,0 +1,18 @@
+.second__class-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0px;
+    background-color: rgb(179, 179, 179);
+}
+
+.second__class-btn.available {
+    background-color: rgb(234, 234, 234);
+}
+.second__class-btn:nth-child(2n){
+    margin-left: 31px;
+
+}
+.second__class-btn:nth-child(2n + 3){
+    margin-right: 2px;
+}

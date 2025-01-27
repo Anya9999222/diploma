@@ -91,6 +91,23 @@
     padding: 20px;
     width: 317px;
     height: 192px;
+    
+
+}
+
+.quantity__input {
+    border: none;
+    width: 15px;
+    height: 15px;
+}
+
+.adult {
+    background-color: #F7F6F6;
+    box-shadow: 0px 2px 2px 0px #00000040;
+}
+
+.child.active {
+    border:  1px solid #FFA800C9;
 }
 
 .choose__place-quantity-box{

@@ -20,6 +20,7 @@ import { SortingBlock } from './components/SortingBlock/SortingBlock'
 import { LastTickets } from './components/LastTickets/LastTickets'
 
 import { ModalInfo } from './components/Modals/ModalInfo/ModalInfo'
+import { TicketPage } from './components/TicketPage/TicketPage'
 
 function App() {
   
@@ -39,9 +40,7 @@ function App() {
               </>
              } main={
              <>
-             <SortingBlock/>
-             <Ticket/>
-            
+             <TicketPage/>
              </>
              }/>
           </>
@@ -80,11 +79,11 @@ function App() {
             <Page  main={<SuccessfulOrder/>}/>
           </>
         }/>
-        <Route path='/modal' element={
+        {/* <Route path='/modal' element={
           <>
             <Page  main={<ModalInfo/>}/>
           </>
-        }/>
+        }/> */}
       </Route>
     </Routes>
     </BrowserRouter>

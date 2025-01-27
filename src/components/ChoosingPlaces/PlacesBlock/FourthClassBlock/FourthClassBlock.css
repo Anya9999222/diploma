@@ -1,0 +1,42 @@
+.fourth__class-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 93%;
+    padding-left: 12px;
+}
+
+.fourth__class-btn {
+    width: 25px;
+    height: 20px;
+    border: none;
+    border-radius: 0px;
+    background-color: rgb(179, 179, 179);
+}
+
+.fourth__class-btn.available {
+    background-color: rgb(234, 234, 234);
+}
+.fourth__class-btn:nth-child(2n){
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.fourth__class-btn:nth-child(2n + 3){
+    margin-right: 2px;
+}
+
+.left__block-fourth-class {
+    display: flex;
+}
+
+.first__row {
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.last__row {
+    display: flex;
+    align-items: flex-end;
+}

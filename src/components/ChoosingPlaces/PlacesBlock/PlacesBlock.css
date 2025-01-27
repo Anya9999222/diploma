@@ -39,11 +39,7 @@
 
 }
 
-.places__img{
-    width: 100%;
-    height: 145px;
-    background-image: url('/src/assets/choosingPlaces/wagon.png');
-}
+
 
 .places__wagon-title {
     font-family: Roboto;
@@ -137,16 +133,38 @@
     justify-content: space-between;
 }
 
-.places__main-service-item {
-    width: 36px;
-    height: 34px;
-    border: 1px solid #292929;
-    border-radius: 5px;
+
+
+
+.places__img{
+    width: 100%;
+    height: 145px;
+    position: relative;
     background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center;
+    background-size: cover;
+    
 }
 
-.places__main-service-item.conditioning{
-    background-image: url(/src/assets/choosingPlaces/conditioning.png);
+.places__img.first {
+    background-image: url('/src/assets/choosingPlaces/lux-background.png');
+}
+
+.places__img.second {
+    background-image: url('/src/assets/choosingPlaces/second_class-background.png');
+}
+
+.places__img.third {
+    background-image: url('/src/assets/choosingPlaces/third-class-background.png');
+}
+
+.places__img.fourth {
+    background-image: url('/src/assets/choosingPlaces/fourth-class-background.png');
+}
+.places__container {
+    position: absolute;
+    width: 750px;
+    left: 139px;
+    top: 30px;
+    height: 120px;
+    background-color: transparent;
 }

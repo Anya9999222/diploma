@@ -1,40 +1,60 @@
 import { useNavigate } from 'react-router-dom';
 import './FormHeader.css'
+import { DirectionInput} from '../DirectionInput/DirectionInput';
+import { DateInput } from '../DateInput/DateInput';
+import { useDispatch, useSelector } from 'react-redux';
+import { formatUrl } from '../../hooks';
+import { fetchData } from '../../redux/slices/SearchOptionsSlice';
+import { useState } from 'react';
+import { useCallback } from 'react';
 
 
 export const FormHeader = ({position}) => {
     const navigate = useNavigate();
+    const state = useSelector((state) => state.route)
+    const dispatch = useDispatch();
+
+    const [directionFrom, setDirectionFrom] = useState('');
+    const [directionTo, setDirectionTo] = useState('');
+
+  const switchDirections = useCallback(() => {
+    setDirectionFrom(directionTo);
+    setDirectionTo(directionFrom);
+  }, [directionFrom, directionTo]);
 
     const handleClick = (e) => {
         e.preventDefault();
-
         navigate('./trains')
+        dispatch(fetchData(state))
+       
+        formatUrl(state)
     }
+
     return(
         <div className={`form-container ${position}`}>
-            <form className="form-header" action="">
+            <form className="form-header" action="" onSubmit={handleClick}>
                 <div className={`form__input-container ${position}`}>
                     <div className='form__input-container-item'> 
-                    <div className='input__container-item'>
-                        <label className='header__label' htmlFor="from">Направление</label>
-                        <input type="text" className="form__input from" placeholder='Откуда'/>
-                    </div>
-                    <div className='change-icon'></div>
-                        <input type="text" className="form__input to"/>
+                        <div className='input__box'>
+                        <DirectionInput label={'Направление'} placeholder={'Откуда'} icon={'direction-icon'} direction={'from'} onChange={setDirectionFrom} value={directionFrom}/>
+                        </div>
+                        
+                        <div className='change-icon' onClick={switchDirections}></div>
+                        <div className='input__box'>
+                        <DirectionInput placeholder={'Куда'} icon={'direction-icon'} direction={'to'} onChange={setDirectionTo} value={directionTo}/>
+                        </div>
                     </div>
 
                     <div className='form__input-container-item'>
-                    <div className='input__container-item'>
-                        <label  className='header__label' htmlFor="from">Дата</label>
-                        <input type="text" className="form__input date-to" placeholder='ДД/ММ/ГГ'/>
+                        <div className='input__box'>
+                        <DateInput direction={'from'} label={'Дата'}/>
+                        </div>
+                        <div className='input__box'>
+                        <DateInput direction={'to'}/>
+                        </div>
                     </div>
-                    <input type="text" className="form__input date-from" placeholder='ДД/ММ/ГГ'/>
-                    </div>
-                    
-
-                    
                 </div>
-                <button className='form-button' onClick={handleClick} >Найти билеты</button>
+                <button className='form-button' type='submit' >Найти билеты</button>
             </form>
         </div>
     )

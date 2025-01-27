@@ -2,13 +2,25 @@
     display: flex;
     align-items: center;
     margin-left: 35px;
+   
 }
 
 .choose__place-route{
     margin-left: 40px;
 }
 
-.train__number {
+.choose__place-train__number{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+/* .train__number {
     color: #3E3C41;
     font-family: Roboto;
     font-size: 24px;
@@ -18,9 +30,9 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     margin: 0;
-}
+} */
 
-.route-aside{
+.choose__place-route-aside{
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
@@ -28,7 +40,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-   
+    text-transform: capitalize;
 }
 
 .first__station{

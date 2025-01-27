@@ -2,31 +2,37 @@ export const options = [
     {
         id: 1,
         img: "/src/assets/asideForm/compartment.png",
-        name: 'Купе'
+        name: 'secondClass',
+        title: 'Купе'
     },
     {
         id: 2,
         img: "/src/assets/asideForm/reserved.png",
-        name: 'Плацкарт'
+        name: 'thirdClass',
+        title: 'Плацкарт'
     },
     {
         id: 3,
         img: "/src/assets/asideForm/sitting.png",
-        name: 'Сидячий'
+        name: 'fourthClass',
+        title: 'Сидячий'
     },
     {
         id: 4,
         img: "/src/assets/asideForm/lux.png",
-        name: 'Люкс'
+        name: 'firstClass',
+        title: 'Люкс'
     },
     {
         id: 5,
         img: "/src/assets/asideForm/wi-fi.png",
-        name: 'Wi-Fi'
+        name: 'wifi',
+        title: 'Wi-Fi'
     },  
     {   
         id: 6,
         img: "/src/assets/asideForm/express.png",
-        name: 'Экспресс'
+        name: 'express',
+        title: 'Экспресс'
     },
 ]

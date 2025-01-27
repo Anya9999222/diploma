@@ -1,12 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import './TimeSelect.css';
-
-export const TimeSelect = ({min,max,step,onChange}) => {
+import { useDispatch } from "react-redux";
+import { changeTimeFields } from "../../../../redux/slices/sidebarSelectSlice";
+export const TimeSelect = ({min, max, step, onChange, direction, stage}) => {
     const [inputFrom,setInputFrom ] = useState(min);
       const [inputTo,setInputTo ] = useState(max);
       const sliderRef = useRef(null);
       const maxState = useRef(null);
       const minState = useRef(null);
+      const dispatch = useDispatch();
     
       useEffect(() => {
           if (sliderRef.current===null) return;
@@ -24,6 +26,21 @@ export const TimeSelect = ({min,max,step,onChange}) => {
           }
           
       }, [inputFrom,inputTo])
+
+      useEffect(() => {
+            const id = setTimeout(() => {
+              dispatch(changeTimeFields({
+                stage: stage,
+                direction: direction.direction,
+                min: inputFrom,
+                max: inputTo
+              }))
+            }, 1000);
+      
+            return() => {
+              clearTimeout(id)
+            }
+        },[inputFrom,inputTo])
       
     return(
         <div className="time__select">

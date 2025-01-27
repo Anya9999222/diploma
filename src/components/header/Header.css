@@ -42,16 +42,37 @@
 
 .header__logo {
   margin-left: 250px;
-  font-weight: 600;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42.19px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.header__logo:hover{
+  color: white;
 }
 
 .header__menu-list {
   background-color: black;
   display: flex;
-  height: 50px;
+  height: 94px;
   align-items: center;
   padding-left: 250px;
   margin-top: 0;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 35.16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.menu-link:hover {
+  color: #FFA800;
 }
 
 .header__main{

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './SortingBlock.css'
 
-export const SortingBlock = () => {
+export const SortingBlock = ({num}) => {
     const [activeSort, setActiveSort] = useState('времени');
     const [selectState, setSelectState] = useState('hidden');
 
@@ -13,7 +13,7 @@ export const SortingBlock = () => {
     return(
         <div className='sorting__block'>
             <div className='sorting__total'>
-                найдено 20
+                найдено {num}
             </div>
             <div className='sorting__block-item'>
                 <div className='sorting__block-section'>

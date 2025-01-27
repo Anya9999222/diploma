@@ -6,19 +6,19 @@ export const Footer = () => {
             <div className="footer__contact" id='contact'>
                 <h2 className='foooter-header'>Свяжитесь с нами</h2>
                 <div className="footer__contact-item">
-                    <img src="../../src/assets/footer/phone.png" className='footer-img' alt="" />
+                    <img src="/src/assets/footer/phone.png" className='footer-img' alt="" />
                     <a href="#">8 (800) 000 00 00</a>
                 </div>
                 <div className="footer__contact-item">
-                    <img src="../../src/assets/footer/mail.png" className='footer-img' alt="" />
+                    <img src="/src/assets/footer/mail.png" className='footer-img' alt="" />
                     <a href="#">inbox@mail.ru</a>
                 </div>
                 <div className="footer__contact-item">
-                    <img src="../../src/assets/footer/skype.png" className='footer-img'alt="" />
+                    <img src="/src/assets/footer/skype.png" className='footer-img'alt="" />
                     <a href="#">tu.train.tickets</a>
                 </div>
                 <div className="footer__contact-item">
-                    <img src="../../src/assets/footer/location.png" className='footer-img' alt="" />
+                    <img src="/src/assets/footer/location.png" className='footer-img' alt="" />
                     <a href="#">г. Москва <br />ул. Московская 27-35 <br />555 555</a>
                 </div>
             </div>
@@ -29,7 +29,7 @@ export const Footer = () => {
                         <div className='footer-form-block'>
                             <label htmlFor="email">Будьте в курсе событий</label>
 
-                            <input className='footer-form__input' type="email" name='email'/>
+                            <input className='footer-form__input' type="email" name='email' placeholder='e-mail'/>
                         </div>
                         
                         <button className='button footer'>Отправить</button>

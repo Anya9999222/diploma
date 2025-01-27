@@ -1,0 +1,33 @@
+.places__main-service-item {
+    width: 36px;
+    height: 34px;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.places__main-service-item:hover {
+    background-color: #FFA800;
+    border: 1px solid #292929;
+}
+
+.places__main-service-item.included {
+    background-color: #FCDC9D;
+}
+
+.places__main-service-item.picked {
+    background-color: #FDB935;
+}
+.places__main-service-item.conditioning{
+    background-image: url(/src/assets/choosingPlaces/conditioning.png);
+}
+
+.places__main-service-item.wi-fi {
+    background-image: url(/src/assets/choosingPlaces/wi-fi.png);
+}
+
+.places__main-service-item.linens {
+    background-image: url(/src/assets/choosingPlaces/linens.png);
+}

@@ -45,16 +45,9 @@
     width: 317px;
 }
 
-.adult {
-    background-color: #F7F6F6
-}
 
 
 
-.quantity__input {
-    border: none;
-    width: 10px;
-}
 
 .choose__place-type {
     display: flex;

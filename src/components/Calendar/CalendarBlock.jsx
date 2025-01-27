@@ -4,18 +4,19 @@ import "react-calendar/dist/Calendar.css";
 import './CalendarBlock.css'
 
 
-export const CalendarBlock = () => {
-    const [calendarValue, onChangeCalendar] = useState(new Date());
+export const CalendarBlock = ({onChange, value}) => {
+
 
     return(
         <div className="calendar__container">
             <Calendar 
-            onChange={onChangeCalendar} 
-            value={calendarValue} 
+            onChange={onChange} 
+            value={value} 
             className={'calendar'}
             next2Label={null}
             prev2Label={null}
-            maxDetail="month"
+            minDate={new Date()}
+            navigationLabel={({ date, label, locale, view }) => label = date.toLocaleString('default', { month: 'long' })}
             />
         </div>
     )

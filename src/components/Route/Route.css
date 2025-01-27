@@ -1,7 +1,7 @@
 .route {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     /* margin-top: 47px; */
     width: 100%;
     /* padding: 25px; */
@@ -17,6 +17,13 @@
     text-decoration-skip-ink: none;
 }
 
+.direct-from {
+    width: 40%;
+}
+
+.direct-to{
+    width: 40%;
+}
 .direct__arrow{
     background-size: cover;
     width: 30px;
@@ -39,6 +46,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    text-transform: capitalize;
 
 }
 

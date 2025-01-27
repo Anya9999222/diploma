@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
     /* align-items: center; */
     /* margin-bottom: 80px; */
 }
@@ -62,16 +63,51 @@
     width: 24px;
     height: 24px;
     background-image: url(/src/assets/header/change-icon.png);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .form__input {
     width: 320px;
     height: 60px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: black;
     /* margin: 5px 10px; */
 }
 
+.direction-icon {
+    width: 20.87px;
+    height: 30px;
+    bottom: 15px;
+    right: 15px;
+    gap: 0px;
+    opacity: 0px;
+    background-image: url(/src/assets/header/input-direction.png);
+    position: absolute;
+    
+}
 
+.date-icon {
+    width: 30px;
+    height: 33px;
+    bottom: 15px;
+    right: 15px;
+    gap: 0px;
+    opacity: 0px;
+    background-image: url(/src/assets/header/input-date.png);
+    position: absolute;
+}
+
+.input__box {
+    width: 323px;
+}
 
 .form-button {
     color: black;
@@ -100,6 +136,7 @@
 
 .header__label {
     margin-left: 15px;
+    height: 45px;
 }
 
 .date-from {

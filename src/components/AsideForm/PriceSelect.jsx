@@ -1,6 +1,7 @@
 import './PriceSelect.css';
 import { useEffect, useRef, useState } from 'react';
-
+import { changePriceFields } from '../../redux/slices/sidebarSelectSlice';
+import { useDispatch } from 'react-redux';
 
 export const PriceSelect = ({min,max,step,className,onChange}) => {
   const [inputFrom,setInputFrom ] = useState(min);
@@ -8,6 +9,9 @@ export const PriceSelect = ({min,max,step,className,onChange}) => {
   const sliderRef = useRef(null);
   const maxState = useRef(null);
   const minState = useRef(null);
+  const dispatch = useDispatch();
+
+  console.log(inputFrom, inputTo)
 
   useEffect(() => {
       if (sliderRef.current===null) return;
@@ -28,6 +32,18 @@ export const PriceSelect = ({min,max,step,className,onChange}) => {
       
   }, [inputFrom,inputTo])
   
+  useEffect(() => {
+      const id = setTimeout(() => {
+        dispatch(changePriceFields({
+          min: inputFrom,
+          max: inputTo
+        }))
+      }, 1000);
+
+      return() => {
+        clearTimeout(id)
+      }
+  },[inputFrom,inputTo])
 
 return (
   <div className={`${className}`}>
@@ -42,11 +58,14 @@ return (
       <div className="range-input">
           <input type="range" 
           onChange={(e)=>{
-            setInputFrom(parseFloat(e.target.value))}}
+            setInputFrom(parseFloat(e.target.value))
+            
+          }}
           min={min}
           max={max}
           step={step}
-          defaultValue={min}/>
+          defaultValue={min}
+          />
           <input type="range"
           onChange={(e)=>{
             setInputTo(parseFloat(e.target.value))

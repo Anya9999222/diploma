@@ -1,19 +1,41 @@
+import { useSelector } from 'react-redux'
 import './TicketOption.css'
+import { TicketOptionItem } from './TicketOptionItem'
 
-export const TicketOption = ({type, places, price, key}) => {
+export const TicketOption = () => {
+
+    const availableSeats = useSelector((state) => state.tickets.tickets[0].departure.available_seats_info);
+    const priceInfo = useSelector((state) => state.tickets.tickets[0].departure.price_info)
  return(
-    <div className='ticket-option'>
-        <div className='ticket-option-item'>
-            <div className='ticket-class'>{type}</div>
-            <div className='quantity'>{places}</div>
-        </div>
-        
-        <div className='price'>
-            <span className='price-start'>от</span> 
-            {price} 
-            <div className='ruble-icon'></div>
-            {/* <img src="/src/assets/asideForm/ruble.png" alt="" /> */}
-        </div>
-    </div>
+    <>
+        {
+            availableSeats.fourth ? <TicketOptionItem 
+            type={'Сидячий'}
+            places={availableSeats.fourth}
+            price={priceInfo.fourth.bottom_price}
+            /> : ''
+        }
+        {
+            availableSeats.third ? <TicketOptionItem 
+            type={'Плацкарт'}
+            places={availableSeats.third}
+            price={priceInfo.third.bottom_price}
+            /> : ''
+        }
+        {
+            availableSeats.second ? <TicketOptionItem 
+            type={'Купе'}
+            places={availableSeats.second}
+            price={priceInfo.second.bottom_price}
+            /> : ''
+        }
+        {
+            availableSeats.first ? <TicketOptionItem 
+            type={'Люкс'}
+            places={availableSeats.first}
+            price={priceInfo.first.bottom_price}
+            /> : ''
+        }
+    </>
  )
 }
