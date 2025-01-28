@@ -9,13 +9,12 @@ export const DirectionInput = ({label, placeholder, icon, direction, onChange, v
     // const [value, setValue] = useState()
     const [citiesList, setCitiesList] = useState([]);
     const [listOpened, setListOpened] = useState(true)
-
+    const [itemPicket, setItemPicked] = useState(false)
     const [debounce] = useDebounce(value, 300);
 
-    const val = useSelector((state) => state.route)
     const dispatch = useDispatch();
 
-    console.log(citiesList)
+    console.log(citiesList.length)
 
     const citiesFetch = async (name) => {
         try {
@@ -45,7 +44,11 @@ export const DirectionInput = ({label, placeholder, icon, direction, onChange, v
          if (debounce) {
             citiesFetch(value)
          }
-         setListOpened(true)
+
+         if(citiesList.length > 0){
+            value !== citiesList[0].label ? setListOpened(true) : ''
+         }
+         
     }, [debounce])
 
     const handleClick = (item) => {

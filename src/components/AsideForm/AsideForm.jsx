@@ -23,38 +23,13 @@ export const AsideForm = () => {
    
 
     useEffect(() => {
-        const opts = {
-                have_first_class: state.options.firstClass,
-                have_second_class: state.options.secondClass,
-                have_third_class: state.options.thirdClass,
-                have_fourth_class: state.options.fourthClass,
-                have_wifi: state.options.wifi,
-                have_express: state.options.express,
-                price_from: state.prices.min,
-                price_to: state.prices.max,
-                start_departure_hour_from: state.time.to.departure.min,
-                start_departure_hour_to: state.time.to.departure.max,
-                start_arrival_hour_to: state.time.to.arrival.max,
-                start_arrival_hour_from: state.time.to.arrival.min,
-                end_departure_hour_from:  state.time.from.departure.min,
-                end_departure_hour_to: state.time.from.departure.max,
-                end_arrival_hour_from:  state.time.from.arrival.min,
-                end_arrival_hour_to:  state.time.from.arrival.max,
-            }
-           
-        const params = new URLSearchParams(opts);
-
+        const opts = formatUrl(state);
         const url ={
             from: cityInfo.from,
             to: cityInfo.to,
-            opts: params
+            opts: opts
         }
-        
-        
-
-        // dispatch(fetchData(url))
-
-        console.log(opts)
+        dispatch(fetchData(url))
     }, [state])
 
 
