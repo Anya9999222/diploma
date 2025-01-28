@@ -64,6 +64,6 @@ import {
   export const { 
     setSelectedOption, 
     clearSelectedOption 
-} = selectedTrainSlice.actions;
+} = selectedSeatsSlice.actions;
   
   export const selectedSeats = selectedSeatsSlice.reducer;
